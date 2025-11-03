@@ -1,1 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForexPath Academy - Simple & Effective Forex Education</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font and smooth scrolling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #F8FAFC; /* slate-50 background */
+        }
+        /* Custom Card Hover Effect */
+        .course-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(6, 182, 212, 0.2); /* Cyan shadow on hover */
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center space-x-2 text-2xl font-bold text-slate-900">
+                <svg class="w-8 h-8 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V9a1 1 0 100 2v1a1 1 0 100 2v1m-4-3H8a1 1 0 100 2h4a1 1 0 100-2zm0-2H8a1 1 0 100 2h4a1 1 0 100-2zM4 16h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1z"></path>
+                </svg>
+                <span>ForexPath</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#courses" class="text-slate-600 hover:text-cyan-600 transition duration-150 font-medium">Courses</a>
+                <a href="#features" class="text-slate-600 hover:text-cyan-600 transition duration-150 font-medium">Why Us</a>
+                <a href="#pricing" class="text-slate-600 hover:text-cyan-600 transition duration-150 font-medium">Pricing</a>
+                <a href="#" class="px-4 py-2 bg-cyan-500 text-white font-semibold rounded-full hover:bg-cyan-600 transition duration-150 shadow-md">Start Learning</a>
+            </nav>
+
+            <!-- Mobile Menu Button (Hamburger) - Non-functional placeholder, but good practice -->
+            <button class="md:hidden text-slate-600 hover:text-cyan-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="pt-24 pb-32 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
+                    Master Forex Trading. <span class="text-cyan-400">Simplified.</span>
+                </h1>
+                <p class="mt-4 text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto">
+                    ForexPath breaks down complex markets into bite-sized, actionable lessons. Start your journey from beginner to profitable trader today, risk-free.
+                </p>
+                <div class="mt-10 space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#courses" class="inline-block px-8 py-3 text-lg font-semibold bg-cyan-500 text-slate-900 rounded-full shadow-lg hover:bg-cyan-400 transition duration-300 transform hover:scale-105">
+                        Explore Courses
+                    </a>
+                    <a href="#" class="inline-block px-8 py-3 text-lg font-semibold bg-slate-700 text-white rounded-full shadow-lg hover:bg-slate-600 transition duration-300 transform hover:scale-105">
+                        Try Demo Trading
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Overview Section -->
+        <section id="courses" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-slate-900 mb-4">Our Learning Path</h2>
+                <p class="text-xl text-center text-slate-600 mb-16 max-w-3xl mx-auto">Structured curriculum designed by professional traders, moving you seamlessly from fundamentals to advanced strategy.</p>
+
+                <!-- Course Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Course Card 1: Beginner -->
+                    <div class="course-card bg-slate-50 border-t-4 border-cyan-500 rounded-xl p-8 shadow-xl">
+                        <span class="inline-block bg-cyan-100 text-cyan-600 text-xs font-bold px-3 py-1 rounded-full mb-4">BEGINNER</span>
+                        <h3 class="text-2xl font-bold mb-3">Forex Fundamentals 101</h3>
+                        <p class="text-slate-600 mb-5">Understand the market basics, terminology (pips, lots, leverage), and how currency pairs work. Perfect starting point.</p>
+                        <ul class="space-y-2 text-sm text-slate-700">
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 5 Core Modules</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> The Anatomy of a Trade</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Risk-Free Quizzes</li>
+                        </ul>
+                        <a href="#" class="mt-6 block text-center py-3 bg-cyan-500 text-white rounded-full font-semibold hover:bg-cyan-600 transition duration-150">Enroll Now (Free)</a>
+                    </div>
+
+                    <!-- Course Card 2: Intermediate -->
+                    <div class="course-card bg-slate-50 border-t-4 border-yellow-500 rounded-xl p-8 shadow-xl">
+                        <span class="inline-block bg-yellow-100 text-yellow-600 text-xs font-bold px-3 py-1 rounded-full mb-4">INTERMEDIATE</span>
+                        <h3 class="text-2xl font-bold mb-3">Technical Analysis Deep Dive</h3>
+                        <p class="text-slate-600 mb-5">Learn to read charts, master indicators (MA, RSI, MACD), and identify powerful candlestick patterns.</p>
+                        <ul class="space-y-2 text-sm text-slate-700">
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Support & Resistance</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Fibonacci Retracements</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Practical Charting Exercises</li>
+                        </ul>
+                        <a href="#" class="mt-6 block text-center py-3 bg-yellow-500 text-white rounded-full font-semibold hover:bg-yellow-600 transition duration-150">View Details</a>
+                    </div>
+
+                    <!-- Course Card 3: Advanced -->
+                    <div class="course-card bg-slate-50 border-t-4 border-red-500 rounded-xl p-8 shadow-xl">
+                        <span class="inline-block bg-red-100 text-red-600 text-xs font-bold px-3 py-1 rounded-full mb-4">ADVANCED</span>
+                        <h3 class="text-2xl font-bold mb-3">Strategy & Risk Management</h3>
+                        <p class="text-slate-600 mb-5">Develop a complete trading plan, master position sizing, and delve into fundamental analysis and trading psychology.</p>
+                        <ul class="space-y-2 text-sm text-slate-700">
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Macroeconomic Factors</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Backtesting Methodologies</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Building a Trading Journal</li>
+                        </ul>
+                        <a href="#" class="mt-6 block text-center py-3 bg-red-500 text-white rounded-full font-semibold hover:bg-red-600 transition duration-150">Premium Access</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features Section (Why Us) -->
+        <section id="features" class="py-20 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-16">The ForexPath Difference</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    
+                    <!-- Feature 1 -->
+                    <div class="text-center p-6 rounded-lg">
+                        <svg class="w-12 h-12 mx-auto text-cyan-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-2">Bite-Sized Learning</h3>
+                        <p class="text-slate-400">Lessons are kept short and focused, allowing you to learn during breaks without feeling overwhelmed by dense financial jargon.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="text-center p-6 rounded-lg">
+                        <svg class="w-12 h-12 mx-auto text-cyan-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14c0 1.105-.895 2-2 2H9a2 2 0 01-2-2m0 0V5m0 14h12m0 0V5m-6 6h.01M17 17h.01"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-2">Interactive Quizzes</h3>
+                        <p class="text-slate-400">Reinforce your knowledge instantly with fun, engaging quizzes at the end of every module. Track your mastery in real-time.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="text-center p-6 rounded-lg">
+                        <svg class="w-12 h-12 mx-auto text-cyan-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3 .895-3 2 1.343 2 3 2m0-8V9a1 1 0 100 2v1a1 1 0 100 2v1m-4-3H8a1 1 0 100 2h4a1 1 0 100-2zm0-2H8a1 1 0 100 2h4a1 1 0 100-2zM4 16h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1z"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-2">Risk-Free Simulator</h3>
+                        <p class="text-slate-400">Apply what you learn immediately in our integrated demo trading environment using real-time market data, without risk.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-slate-900 mb-16">Affordable Paths to Success</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Free Plan -->
+                    <div class="bg-white rounded-xl shadow-xl p-8 border-t-4 border-slate-300">
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900">Basic Explorer</h3>
+                        <p class="text-slate-600 mb-6">Access all fundamental lessons and the core trading simulator.</p>
+                        <div class="text-4xl font-extrabold mb-8 text-cyan-500">
+                            $0<span class="text-xl text-slate-500 font-normal"> / forever</span>
+                        </div>
+                        <ul class="space-y-3 mb-10 text-slate-700">
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Beginner Course (101)</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Unlimited Demo Trading</li>
+                            <li class="flex items-center text-slate-500"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> Advanced Strategies</li>
+                            <li class="flex items-center text-slate-500"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> Weekly Live Q&A</li>
+                        </ul>
+                        <a href="#" class="block w-full text-center py-3 border border-slate-300 text-slate-700 rounded-full font-semibold hover:bg-slate-100 transition duration-150">Sign Up Free</a>
+                    </div>
+                    
+                    <!-- Pro Plan (Recommended) -->
+                    <div class="bg-white rounded-xl shadow-2xl ring-4 ring-cyan-500 p-8 border-t-4 border-cyan-500 transform scale-105">
+                        <div class="text-center mb-4">
+                            <span class="inline-block bg-cyan-500 text-white text-sm font-bold px-4 py-1 rounded-full uppercase">Most Popular</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900">Pro Trader</h3>
+                        <p class="text-slate-600 mb-6">Everything you need to build, backtest, and execute a profitable trading plan.</p>
+                        <div class="text-4xl font-extrabold mb-8 text-cyan-500">
+                            $49<span class="text-xl text-slate-500 font-normal"> / month</span>
+                        </div>
+                        <ul class="space-y-3 mb-10 text-slate-700">
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> **All Courses & Modules**</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Weekly Live Q&A Sessions</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Advanced Backtesting Tools</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Dedicated Support</li>
+                        </ul>
+                        <a href="#" class="block w-full text-center py-3 bg-cyan-500 text-white rounded-full font-semibold hover:bg-cyan-600 transition duration-150 shadow-lg">Go Pro</a>
+                    </div>
+                    
+                    <!-- Lifetime Plan -->
+                    <div class="bg-white rounded-xl shadow-xl p-8 border-t-4 border-slate-300">
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900">Lifetime Investor</h3>
+                        <p class="text-slate-600 mb-6">One-time payment for unlimited, lifetime access to all future content updates.</p>
+                        <div class="text-4xl font-extrabold mb-8 text-cyan-500">
+                            $499<span class="text-xl text-slate-500 font-normal"> / one-time</span>
+                        </div>
+                        <ul class="space-y-3 mb-10 text-slate-700">
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> All Pro Features</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Lifetime Access</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Access to all Future Courses</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Exclusive Trading Templates</li>
+                        </ul>
+                        <a href="#" class="block w-full text-center py-3 border border-slate-900 text-slate-900 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition duration-150">Get Lifetime</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial/Social Proof Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-slate-900 mb-12">What Our Traders Say</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="bg-slate-50 p-6 rounded-xl shadow-lg border-l-4 border-cyan-500">
+                        <p class="italic text-slate-700 mb-4">"The lessons here are truly beginner-friendly. I finally understood risk management without feeling lost in jargon. My confidence has skyrocketed!"</p>
+                        <p class="font-semibold text-slate-900">- Alex R., New York</p>
+                        <span class="text-yellow-500 text-sm">★★★★★</span>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-slate-50 p-6 rounded-xl shadow-lg border-l-4 border-cyan-500">
+                        <p class="italic text-slate-700 mb-4">"I loved the interactive simulator. It let me apply the Technical Analysis course material immediately. Best way to learn by doing."</p>
+                        <p class="font-semibold text-slate-900">- Sarah K., London</p>
+                        <span class="text-yellow-500 text-sm">★★★★★</span>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-slate-50 p-6 rounded-xl shadow-lg border-l-4 border-cyan-500">
+                        <p class="italic text-slate-700 mb-4">"The Pro subscription is worth every penny just for the weekly Q&A. Getting direct feedback from experienced traders is invaluable for growth."</p>
+                        <p class="font-semibold text-slate-900">- David T., Sydney</p>
+                        <span class="text-yellow-500 text-sm">★★★★★</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Banner -->
+        <section class="py-20 bg-cyan-500">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold text-white mb-4">Ready to Trade with Confidence?</h2>
+                <p class="text-xl text-cyan-900 mb-8">Join thousands of successful traders who started their journey with ForexPath Academy.</p>
+                <a href="#courses" class="inline-block px-10 py-4 text-xl font-semibold bg-white text-cyan-600 rounded-full shadow-lg hover:bg-slate-100 transition duration-300 transform hover:scale-105">
+                    Sign Up Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+            
+            <!-- Logo & Copyright -->
+            <div class="col-span-2 md:col-span-1">
+                <div class="flex items-center space-x-2 text-xl font-bold text-white mb-4">
+                     <svg class="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V9a1 1 0 100 2v1a1 1 0 100 2v1m-4-3H8a1 1 0 100 2h4a1 1 0 100-2zm0-2H8a1 1 0 100 2h4a1 1 0 100-2zM4 16h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1z"></path>
+                    </svg>
+                    <span>ForexPath</span>
+                </div>
+                <p class="text-sm">&copy; 2025 ForexPath Academy. All rights reserved.</p>
+                <p class="text-xs mt-2 text-red-400">Trading carries a high level of risk.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#courses" class="hover:text-cyan-500 transition">Our Courses</a></li>
+                    <li><a href="#features" class="hover:text-cyan-500 transition">Why ForexPath</a></li>
+                    <li><a href="#pricing" class="hover:text-cyan-500 transition">Pricing Plans</a></li>
+                    <li><a href="#" class="hover:text-cyan-500 transition">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal & Support -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Support</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-cyan-500 transition">Help Center</a></li>
+                    <li><a href="#" class="hover:text-cyan-500 transition">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-cyan-500 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-cyan-500 transition">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <!-- Placeholder icons for social media -->
+                    <a href="#" class="text-slate-400 hover:text-cyan-500 transition" aria-label="Twitter">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.35-1.6.58-2.47.65.88-.53 1.56-1.37 1.88-2.38-.83.49-1.75.85-2.73 1.05-.78-.83-1.89-1.35-3.13-1.35-2.37 0-4.3 1.93-4.3 4.3 0 .34.04.67.11.98-3.57-.18-6.74-1.89-8.86-4.48-.37.64-.58 1.38-.58 2.17 0 1.49.75 2.81 1.88 3.59-.7-.02-1.35-.21-1.92-.53v.05c0 2.08 1.48 3.82 3.44 4.2-.36.1-.74.15-1.13.15-.28 0-.55-.03-.81-.08 1.95 2.41 4.79 4.16 8.35 4.2-.95.74-2.15 1.18-3.46 1.18-.22 0-.44-.01-.66-.04 3.61 2.23 7.89 3.45 12.42 3.45 14.89 0 23-12.31 23-23 0-.37-.01-.73-.03-1.09.81-.58 1.5-1.3 2.06-2.12z"></path></svg>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-cyan-500 transition" aria-label="Facebook">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 12c0-5.71-4.79-10.5-10.5-10.5C6.29 1.5 1.5 6.29 1.5 12c0 5.16 3.73 9.47 8.63 10.35V15.4h-2.9v-3.4h2.9V9.45c0-2.88 1.76-4.47 4.35-4.47 1.24 0 2.3.09 2.6V7.4h-1.5c-1.16 0-1.4.55-1.4 1.35V12h3.4l-.54 3.4h-2.86v6.95c4.9-.88 8.63-5.19 8.63-10.35z"></path></svg>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-cyan-500 transition" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.47 20.5H3.53V9.48h16.94v11.02zM12 7.7a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM8.3 9.48H5.7v11.02h2.6V9.48zm5.9 0H11.6v11.02h2.6V9.48zm4.1 0h-2.6v11.02h2.6V9.48z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
 
